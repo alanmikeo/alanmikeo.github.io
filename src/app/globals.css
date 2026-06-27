@@ -8,6 +8,7 @@
   --color-neon-green: #39FF14;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-poppins: var(--font-poppins);
 
   --animate-fade-in: fade-in 1s ease-out forwards;
   --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
@@ -41,4 +42,35 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   @apply text-white;
+}
+
+button,
+a,
+input,
+textarea {
+  border-radius: 0;
+}
+
+.section-kicker {
+  @apply font-mono text-xs uppercase text-electric-blue;
+}
+
+.section-title {
+  @apply mt-4 max-w-3xl text-4xl font-light leading-tight text-white md:text-6xl;
+}
+
+.terminal-panel {
+  clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 24px, 100% 100%, 0 100%);
+}
+
+.project-row {
+  clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
+}
+
+.field {
+  @apply w-full border border-white/10 bg-black/40 px-4 py-3 text-white placeholder:text-zinc-600 outline-none transition-colors focus:border-electric-blue/60;
+}
+
+.social-link {
+  @apply inline-flex items-center gap-2 border border-white/10 px-4 py-2 font-mono text-xs uppercase text-zinc-400 transition-colors hover:border-white/40 hover:text-white;
 }
