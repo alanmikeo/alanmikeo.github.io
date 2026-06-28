@@ -19,15 +19,16 @@ const poppins = Poppins({
 });
 
 const siteUrl = "https://alanmikeo.github.io";
-const siteTitle = "Alan Michael | Produto Digital, Sistemas e Automação";
+const siteTitle = "alanmikeo | Produto Digital, Sistemas e Automação";
 const siteDescription =
   "Portfólio de Alan Michael: desenvolvimento full-stack, apps, landing pages, sistemas de gestão, integrações e IA aplicada a operações reais.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  applicationName: "alanmikeo",
   title: {
     default: siteTitle,
-    template: "%s | Alan Michael",
+    template: "%s | alanmikeo",
   },
   description: siteDescription,
   keywords: [
@@ -64,7 +65,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: siteUrl,
-    siteName: "Alan Michael",
+    siteName: "alanmikeo",
     title: siteTitle,
     description: siteDescription,
     images: [
