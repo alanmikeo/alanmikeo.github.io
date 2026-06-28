@@ -70,8 +70,13 @@ const structuredData = {
         },
         {
           "@type": "WebSite",
+          name: "Latitud Eventos",
+          url: "https://alanmikeo.github.io/latitud-eventos/",
+        },
+        {
+          "@type": "WebSite",
           name: "Nana Consultas",
-          url: "https://nanaconsultas.netlify.app/",
+          url: "https://alanmikeo.github.io/nana-consultas/",
         },
         {
           "@type": "SoftwareApplication",
@@ -89,9 +94,9 @@ const translations = {
     section_labels: ["01 / Serviços", "02 / Projetos", "03 / Stack", "04 / Sobre", "05 / Contato"],
     status: "Disponível para projetos selecionados",
     hero_kicker: "Alan Michael / alanmikeo",
-    hero_title: "Produtos digitais, automações e sistemas que resolvem trabalho real",
+    hero_title: "Produtos digitais que saem do papel.",
     hero_sub:
-      "Eu desenho e construo aplicações web, integrações e fluxos inteligentes para transformar processos confusos em operação simples, mensurável e escalável.",
+      "Apps, sistemas, landing pages e automações com IA para operações que precisam sair do improviso.",
     hero_cta_primary: "Começar conversa",
     hero_cta_secondary: "Ver projetos",
     console_label: "portfolio.session",
@@ -141,6 +146,8 @@ const translations = {
         desc: "Aplicativo de relacionamento com cadastro, login social, swipe, matches, chat com mídia, notificações, moderação, monetização por anúncios e assinatura premium.",
         href: "https://play.google.com/store/apps/details?id=com.alanmikeo.lova",
         linkLabel: "Ver na Play Store",
+        siteHref: "https://alanmikeo.github.io/lova-dating/",
+        siteLinkLabel: "Abrir site",
         logo: "/portfolio/lova-logo.png",
         logoAlt: "Lova Dating",
         logoTone: "pink",
@@ -160,9 +167,11 @@ const translations = {
       },
       {
         label: "Eventos",
-        status: "Em preparação",
+        status: "Publicado",
         title: "Latitud Eventos",
         desc: "Landing page para chácara e espaço de eventos, com narrativa visual escura, apresentação do espaço, estrutura, diferenciais e chamada para orçamento.",
+        href: "https://alanmikeo.github.io/latitud-eventos/",
+        linkLabel: "Abrir site",
         logo: "/portfolio/latitud-logo.png",
         logoAlt: "Latitud Eventos",
         logoTone: "dark",
@@ -173,7 +182,7 @@ const translations = {
         status: "Publicado",
         title: "Nana Consultas",
         desc: "Site comercial para cartomante e vidente, com seções de apresentação, serviços, preços, depoimentos e contato direto via WhatsApp.",
-        href: "https://nanaconsultas.netlify.app/",
+        href: "https://alanmikeo.github.io/nana-consultas/",
         linkLabel: "Abrir site",
         logo: "/portfolio/nana-logo.svg",
         logoAlt: "Nana Consultas",
@@ -226,9 +235,9 @@ const translations = {
     section_labels: ["01 / Services", "02 / Work", "03 / Stack", "04 / About", "05 / Contact"],
     status: "Available for selected projects",
     hero_kicker: "Alan Michael / alanmikeo",
-    hero_title: "Digital products, automations, and systems for real work",
+    hero_title: "Digital products that actually ship.",
     hero_sub:
-      "I design and build web applications, integrations, and intelligent workflows that turn messy processes into simple, measurable, scalable operations.",
+      "Apps, systems, landing pages, and AI automations for operations that need to move beyond improvisation.",
     hero_cta_primary: "Start a conversation",
     hero_cta_secondary: "View projects",
     console_label: "portfolio.session",
@@ -278,6 +287,8 @@ const translations = {
         desc: "Dating app with onboarding, social login, swipe discovery, matches, media chat, notifications, moderation, ads monetization, and premium subscription.",
         href: "https://play.google.com/store/apps/details?id=com.alanmikeo.lova",
         linkLabel: "View on Play Store",
+        siteHref: "https://alanmikeo.github.io/lova-dating/",
+        siteLinkLabel: "Open site",
         logo: "/portfolio/lova-logo.png",
         logoAlt: "Lova Dating",
         logoTone: "pink",
@@ -297,9 +308,11 @@ const translations = {
       },
       {
         label: "Events",
-        status: "In preparation",
+        status: "Published",
         title: "Latitud Eventos",
         desc: "Landing page for an event venue, with dark visual storytelling, venue presentation, structure, differentiators, and quote request flow.",
+        href: "https://alanmikeo.github.io/latitud-eventos/",
+        linkLabel: "Open site",
         logo: "/portfolio/latitud-logo.png",
         logoAlt: "Latitud Eventos",
         logoTone: "dark",
@@ -310,7 +323,7 @@ const translations = {
         status: "Published",
         title: "Nana Consultas",
         desc: "Commercial website for a tarot reader and clairvoyant, with presentation, services, pricing, testimonials, and direct WhatsApp contact.",
-        href: "https://nanaconsultas.netlify.app/",
+        href: "https://alanmikeo.github.io/nana-consultas/",
         linkLabel: "Open site",
         logo: "/portfolio/nana-logo.svg",
         logoAlt: "Nana Consultas",
@@ -456,9 +469,9 @@ export default function Home() {
         </div>
       </header>
 
-      <section id="top" className="relative z-10 min-h-screen px-5 pb-20 pt-24 md:px-8 md:pt-28">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="max-w-4xl animate-fade-in-up">
+      <section id="top" className="relative z-10 px-5 pb-20 pt-20 md:px-8 md:pt-28 lg:min-h-screen">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:min-h-[calc(100vh-7rem)] lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div className="flex min-h-[calc(100svh-5rem)] max-w-4xl animate-fade-in-up flex-col justify-center lg:min-h-0">
             <div className="mb-6 inline-flex items-center gap-3 border border-white/10 bg-white/[0.03] px-4 py-2 font-mono text-xs uppercase text-zinc-400">
               <span className="h-2 w-2 bg-neon-green shadow-[0_0_18px_rgba(57,255,20,0.7)]" />
               {t.status}
@@ -489,57 +502,40 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="mt-10 grid max-w-3xl grid-cols-1 border-y border-white/10 sm:grid-cols-3">
-              {t.metrics.map(([value, label]) => (
-                <div key={value} className="border-white/10 py-5 sm:border-r sm:px-5 last:sm:border-r-0">
-                  <p className="font-mono text-sm text-white">{value}</p>
-                  <p className="mt-1 text-sm text-zinc-500">{label}</p>
-                </div>
-              ))}
-            </div>
           </div>
 
           <div className="relative animate-fade-in-up lg:pl-8">
-            <div className="terminal-panel relative overflow-hidden border border-white/10 bg-zinc-950/80 shadow-2xl shadow-black/50">
-              <div className="flex h-11 items-center justify-between border-b border-white/10 px-4">
-                <div className="flex gap-2">
-                  <span className="h-2.5 w-2.5 bg-red-500/70" />
-                  <span className="h-2.5 w-2.5 bg-yellow-500/70" />
-                  <span className="h-2.5 w-2.5 bg-neon-green/70" />
-                </div>
-                <p className="font-mono text-xs text-zinc-500">{t.console_label}</p>
-              </div>
+            <div className="terminal-panel relative min-h-[360px] overflow-hidden border border-white/10 bg-zinc-950/70 shadow-2xl shadow-black/50">
+              <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:44px_44px]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_18%,rgba(0,112,243,0.24),transparent_30%),radial-gradient(circle_at_26%_84%,rgba(57,255,20,0.10),transparent_26%)]" />
 
-              <div className="relative min-h-[380px] p-5 font-mono text-sm">
-                <div className="absolute inset-0 bg-[linear-gradient(rgba(57,255,20,0.05)_1px,transparent_1px)] bg-[size:100%_32px]" />
-                <div className="relative space-y-5">
-                  <p className="text-zinc-500">$ whoami</p>
-                  <p className="text-white">{t.console_identity}</p>
-                  <p className="pt-3 text-zinc-500">$ current_focus</p>
-                  {t.console_lines.map((line) => (
-                    <p key={line} className="text-zinc-300">
-                      <span className="text-neon-green">&gt;</span> {line}
-                    </p>
-                  ))}
-                  <div className="pt-6">
-                    <div className="mb-3 flex items-center justify-between text-xs text-zinc-500">
-                      <span>{t.progress_label}</span>
-                      <span>100%</span>
-                    </div>
-                    <div className="h-2 bg-white/5">
-                      <div className="h-full w-full bg-gradient-to-r from-electric-blue to-neon-green" />
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-2 gap-3 pt-6">
-                    {t.terminal_tags.map((item) => (
-                      <div key={item} className="border border-white/10 bg-black/35 p-3 text-xs text-zinc-400">
-                        <span className="text-electric-blue">#</span> {item}
-                      </div>
-                    ))}
-                  </div>
-                  <p className="pt-6 text-white">
-                    <span className="text-zinc-500">$</span> {t.ready_label}<span className="animate-blink text-electric-blue">_</span>
+              <div className="relative flex min-h-[360px] flex-col justify-between p-7 md:p-9">
+                <div className="flex items-center justify-between">
+                  <Image
+                    alt=""
+                    aria-hidden="true"
+                    className="h-20 w-20 border border-white/10 object-cover"
+                    height={80}
+                    src="/brand-logo.png"
+                    width={80}
+                  />
+                  <span className="font-mono text-xs uppercase text-neon-green">{t.ready_label}</span>
+                </div>
+
+                <div>
+                  <p className="font-mono text-sm uppercase text-electric-blue">alanmikeo</p>
+                  <p className="mt-4 max-w-sm text-4xl font-light leading-tight text-white md:text-5xl">
+                    {lang === "pt" ? "produto, código e IA aplicada" : "product, code, and applied AI"}
+                    <span className="animate-blink text-electric-blue">_</span>
                   </p>
+                </div>
+
+                <div className="grid gap-3 sm:grid-cols-3">
+                  {(lang === "pt" ? ["Apps", "Sistemas", "Automação"] : ["Apps", "Systems", "Automation"]).map((item) => (
+                    <div key={item} className="border border-white/10 bg-black/35 px-4 py-3 font-mono text-xs uppercase text-zinc-400">
+                      {item}
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -673,14 +669,26 @@ export default function Home() {
                   <h3 className="max-w-2xl text-2xl font-medium leading-tight text-white md:text-3xl">{project.title}</h3>
                   <p className="mt-4 max-w-2xl text-sm leading-relaxed text-zinc-400 md:text-base">{project.desc}</p>
                   {"href" in project && project.href ? (
-                    <a
-                      href={project.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-5 inline-flex border border-white/10 px-4 py-2 font-mono text-xs uppercase text-zinc-300 transition-colors hover:border-electric-blue/50 hover:text-white"
-                    >
-                      {project.linkLabel}
-                    </a>
+                    <div className="mt-5 flex flex-wrap gap-3">
+                      <a
+                        href={project.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex border border-white/10 px-4 py-2 font-mono text-xs uppercase text-zinc-300 transition-colors hover:border-electric-blue/50 hover:text-white"
+                      >
+                        {project.linkLabel}
+                      </a>
+                      {"siteHref" in project && project.siteHref ? (
+                        <a
+                          href={project.siteHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex border border-white/10 px-4 py-2 font-mono text-xs uppercase text-zinc-300 transition-colors hover:border-electric-blue/50 hover:text-white"
+                        >
+                          {project.siteLinkLabel}
+                        </a>
+                      ) : null}
+                    </div>
                   ) : (
                     <span className="mt-5 inline-flex border border-white/10 px-4 py-2 font-mono text-xs uppercase text-zinc-600">
                       {project.status}
