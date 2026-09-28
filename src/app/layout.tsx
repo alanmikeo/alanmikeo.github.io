@@ -1,57 +1,25 @@
 import type { Metadata } from "next";
-import { Poppins, Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans, Geist, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
+const dmSans = DM_Sans({ variable: "--font-dm-sans", subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({ variable: "--font-space-grotesk", subsets: ["latin"] });
+const geistLogo = Geist({ variable: "--font-geist-logo", subsets: ["latin"] });
 
 const siteUrl = "https://alanmikeo.github.io";
-const siteTitle = "alanmikeo | Produto Digital, Sistemas e Automação";
+const siteTitle = "Alan Michael | Desenvolvedor full-stack de apps e sistemas";
 const siteDescription =
-  "Portfólio de Alan Michael: desenvolvimento full-stack, apps, landing pages, sistemas de gestão, integrações e IA aplicada a operações reais.";
+  "Portfólio de Alan Michael (alanmikeo). Desenvolvimento de aplicativos, sistemas web, sites e automações com IA. Conheça projetos publicados e entre em contato.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: "alanmikeo",
-  title: {
-    default: siteTitle,
-    template: "%s | alanmikeo",
-  },
+  title: siteTitle,
   description: siteDescription,
-  keywords: [
-    "Alan Michael",
-    "alanmikeo",
-    "desenvolvedor full-stack",
-    "portfólio desenvolvedor",
-    "Next.js",
-    "React Native",
-    "Django",
-    "Supabase",
-    "automação",
-    "IA aplicada",
-    "chatbot",
-    "OCR",
-    "visão computacional",
-  ],
   authors: [{ name: "Alan Michael", url: siteUrl }],
   creator: "Alan Michael",
   publisher: "Alan Michael",
-  alternates: {
-    canonical: "/",
-  },
+  alternates: { canonical: "/" },
   manifest: "/site.webmanifest",
   icons: {
     icon: [
@@ -65,17 +33,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: siteUrl,
-    siteName: "alanmikeo",
+    siteName: "Alan Michael",
     title: siteTitle,
     description: siteDescription,
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Alan Michael - Produtos digitais, sistemas e IA aplicada",
-      },
-    ],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Alan Michael, desenvolvedor de apps e sistemas" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -84,30 +45,15 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
+    index: true, follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-BR" className="dark scroll-smooth">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased min-h-screen selection:bg-electric-blue/30 selection:text-white`}
-      >
-        {children}
-      </body>
+    <html lang="pt-BR" className="dark">
+      <body className={dmSans.variable + " " + spaceGrotesk.variable + " " + geistLogo.variable}>{children}</body>
     </html>
   );
 }

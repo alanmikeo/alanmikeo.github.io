@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "Alan Michael Portfolio",
   "short_name": "alanmikeo",
   "icons": [
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#050505",
-  "background_color": "#050505",
+  "theme_color": "#090a12",
+  "background_color": "#090a12",
   "display": "standalone"
 }
